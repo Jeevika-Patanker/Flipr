@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipr</title>
+  <link href="css/main.css" rel="stylesheet">
+  <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4 flex justify-between items-center" >
+
+    <div class="flex items-center">
+      <h1 class="logo text-2xl font-bold">{Finsweet</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex space-x-4">
+      <a href="#home" onclick="showSection('home')" class="nav-link">Home</a>
+      <a href="#blog" onclick="showSection('blog')" class="nav-link">Blog</a>
+      <a href="#about" onclick="showSection('about')" class="nav-link">About Us</a>
+      <a href="#contact" onclick="showSection('contact')" class="nav-link">Contact</a>
+    </nav>
+    <!-- Subscribe Button -->
+    <div class="subscribe-btn">
+      <a href="#subscribe" onclick="showSection('subscribe')">Subscribe</a>
+    </div>
+  </header>
+
+
+  <!-- Home Section  start-->
+  <div class="home">
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <p class="post-category">POSTED ON <span class="category">STARTUP</span></p>
+        <h2 class="hero-title">Step-by-step guide to choosing great font pairs</h2>
+        <p class="author-info">By James West | May 23, 2022</p>
+        <p class="hero-description">A clear and concise introduction to choosing suitable font pairs that will give your
+          project a professional look.</p>
+        <a href="#read-more" class="read-more-btn">Read More</a>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="featured-post">
+        <img src="assets/Client-First - IMAGES/white-concrete-building-1838640.svg" alt="Featured Post Image">
+        <div class="post-info">
+          By <span>John Doe</span> | May 23, 2022
+        </div>
+        <div class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+        <div class="post-description">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident.
+        </div>
+        <a href="#" class="read-more-btn">Read More &gt;</a>
+      </div>
+
+      <div class="all-posts">
+        <div class="view-all-top">
+          <a href="#">View All</a>
+        </div>
+        <h3>All Posts</h3>
+        <div class="post-item">
+          <div class="post-info">By <span>Jane Doe</span> | Aug 23, 2022</div>
+          <h4>8 Figma design systems that you can download for free today.</h4>
+        </div>
+        <div class="post-item">
+          <div class="post-info">By <span>John Doe</span> | Aug 23, 2021</div>
+          <h4>8 Figma design systems that you can download for free today.</h4>
+        </div>
+        <div class="post-item">
+          <div class="post-info">By <span>Jane Doe</span> | Aug 23, 2022</div>
+          <h4>8 Figma design systems that you can download for free today.</h4>
+        </div>
+        <div class="post-item">
+          <div class="post-info">By <span>John Doe</span> | Aug 23, 2021</div>
+          <h4>8 Figma design systems that you can download for free today.</h4>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- About and Mission Section -->
+    <section class="about-mission-section">
+      <div class="about-card">
+        <h3>About Us</h3>
+        <h4>We are a community of content writers who share their learnings</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+        <a href="#">Read More ></a>
+      </div>
+      <div class="mission-card">
+        <h3>Our Mission</h3>
+        <h4>Creating valuable content for creatives all around the world</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+    </section>
+
+    <!-- choose a category  -->
+    <section class="category-section">
+      <h2>Choose A Category</h2>
+      <div class="category-cards">
+        <div class="category-card">
+          <!-- data-title="Business" 
+      data-description="Description for Business" 
+      data-images="assets\Client-First - IMAGES\photo-of-people-walking-on-hallway-3182811.svg"> -->
+          <img src="assets/Client-First - icons/Icon-1.svg" alt="Business Icon">
+          <h3>Business</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="category-card active">
+          <img src="assets/Client-First - icons/Icon (2).svg" alt="Startup Icon">
+          <h3>Startup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="category-card">
+          <img src="assets/Client-First - icons/icon.svg" alt="Economy Icon">
+          <h3>Economy</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="category-card">
+          <img src="assets/Client-First - icons/business-and-trade 1.svg" alt="Technology Icon">
+          <h3>Technology</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Display Area for Selected Card
+<section class="display-section" id="displaySection">
+  <div class="display-content">
+    <img id="displayImage" src="" alt="Selected Category Image">
+    <h3 id="displayTitle"></h3>
+    <p id="displayDescription"></p>
+  </div>
+</section> -->
+
+
+
+    <!-- List of Authors Section -->
+    <section class="authors-section">
+      <h2>List of Authors</h2>
+      <div class="authors-list">
+        <div class="author-card">
+          <img
+            src="assets/Client-First - IMAGES/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.svg"
+            alt="Floyd Miles">
+          <h3>Floyd Miles</h3>
+          <p>Content Writer @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+        <div class="author-card">
+          <img
+            src="assets/Client-First - IMAGES/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.svg"
+            alt="Dianne Russell">
+          <h3>Dianne Russell</h3>
+          <p>Editor @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+              </a>
+          </div>
+        </div>
+        <div class="author-card">
+          <img src="assets/Client-First - IMAGES/fashion-woman-cute-shoes-5704849.svg" alt="Jenny Wilson">
+          <h3>Jenny Wilson</h3>
+          <p>Content Writer @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+              </a>
+
+          </div>
+        </div>
+        <div class="author-card">
+          <img src="assets/Client-First - IMAGES/content-baker-with-delicious-puff-in-cafeteria-6205509.svg"
+            alt="Leslie Alexander">
+          <h3>Leslie Alexander</h3>
+          <p>Content Writer @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+      <p> We are Featured in</p>
+      <div class="logos">
+        <img src="assets/Client-First - IMAGES/Logo 1.svg" alt="Logo 1">
+        <img src="assets/Client-First - IMAGES/Logo 2.svg" alt="Logo 2">
+        <img src="assets/Client-First - IMAGES/Logo 3.svg" alt="Logo 3">
+        <img src="assets/Client-First - IMAGES/Logo 4.svg" alt="Logo 4">
+        <img src="assets/Client-First - IMAGES/Logo 5.svg" alt="Logo 5">
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="testimonials-content">
+        <div class="testimonial-text">
+          <h3>Testimonials</h3>
+          <h4>What people say about our blog</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua.</p>
+        </div>
+        <div class="testimonial-quote">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua.</p>
+          <div class="testimonial-author">
+            <img src="assets\Client-First - IMAGES\Image.svg" alt="Jonathan Vallem">
+            <div>
+              <p><strong>Jonathan Vallem</strong></p>
+              <span>New York, USA</span>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <img src="assets/Client-First - icons/Arrow 1.svg" alt="Previous" class="arrow-button prev-button">
+            <img src="assets/Client-First - icons/Arrow 1.svg" alt="Next" class="arrow-button next-button">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Home page End -->
+
+
+  <!-- Blog Section  start -->
+  <div class="blog" style="display: none;">
+    <section id="home-1" class="hero-section">
+      <div class="hero-content">
+        <p class="post-category">POSTED ON <span class="category">STARTUP</span></p>
+        <h2 class="hero-title">Step-by-step guide to choosing great font pairs</h2>
+        <p class="author-info">By James West | May 23, 2022</p>
+        <p class="hero-description">A clear and concise introduction to choosing suitable font pairs that will give your
+          project a professional look.</p>
+        <a href="#read-more" class="read-more-btn">Read More</a>
+      </div>
+
+      <div class="post-image">
+        <img
+          src="assets/Client-First - IMAGES/man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.svg"
+          alt="Featured Post Image">
+      </div>
+    </section>
+
+    <main class="posts-container">
+      <h1>All posts</h1>
+      <section class="post-list">
+        <!-- Post 1 -->
+        <div class="post-item">
+          <img src="assets/Client-First - IMAGES/two-women-in-front-of-dry-erase-board-1181533.svg" alt="Post image 1"
+            class="post-image">
+          <div class="post-content">
+            <p class="post-category">Startup</p>
+            <h2 class="post-title">Design tips for designers that cover everything you need</h2>
+            <p class="post-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- Post 2 -->
+        <div class="post-item">
+          <img src="assets/Client-First - IMAGES/photo-of-people-doing-handshakes-3183197.svg" alt="Post image 2"
+            class="post-image">
+          <div class="post-content">
+            <p class="post-category">Business</p>
+            <h2 class="post-title">How to build rapport with your web design clients</h2>
+            <p class="post-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- Post 3 -->
+        <div class="post-item">
+          <img src="assets/Client-First - IMAGES/photo-of-woman-looking-at-man-3183173.svg" alt="Post image 3"
+            class="post-image">
+          <div class="post-content">
+            <p class="post-category">Startup</p>
+            <h2 class="post-title">Logo design trends to avoid in 2022</h2>
+            <p class="post-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- Post 4 -->
+        <div class="post-item">
+          <img src="assets/Client-First - IMAGES/photo-of-people-walking-on-hallway-3182811.svg" alt="Post image 4"
+            class="post-image">
+          <div class="post-content">
+            <p class="post-category">Technology</p>
+            <h2 class="post-title">8 Figma design systems you can download for free today</h2>
+            <p class="post-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- Post 5 -->
+        <div class="post-item">
+          <img src="assets/Client-First - IMAGES/two-women-in-front-of-dry-erase-board-1181533.svg" alt="Post image 5"
+            class="post-image">
+          <div class="post-content">
+            <p class="post-category">Economy</p>
+            <h2 class="post-title">Font sizes in UI design: The complete guide to follow</h2>
+            <p class="post-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Pagination -->
+      <div class="pagination">
+        <a href="#" class="prev">Prev</a>
+        <a href="#" class="next">Next</a>
+      </div>
+    </main>
+
+
+    <!-- choose a category  -->
+    <section class="category-section">
+      <h2>Choose A Category</h2>
+      <div class="category-cards">
+        <div class="category-card">
+          <!-- data-title="Business" 
+    data-description="Description for Business" 
+    data-images="assets\Client-First - IMAGES\photo-of-people-walking-on-hallway-3182811.svg"> -->
+          <img src="assets/Client-First - icons/Icon-1.svg" alt="Business Icon">
+          <h3>Business</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="category-card active">
+          <img src="assets/Client-First - icons/Icon (2).svg" alt="Startup Icon">
+          <h3>Startup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="category-card">
+          <img src="assets/Client-First - icons/icon.svg" alt="Economy Icon">
+          <h3>Economy</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="category-card">
+          <img src="assets/Client-First - icons/business-and-trade 1.svg" alt="Technology Icon">
+          <h3>Technology</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Blog Section  End-->
+
+
+  <!-- Blog post Section  start-->
+  <div class="blog-post" style="display: none;">
+    <div class="article-container">
+      <div class="author-info">
+        <img src="assets/Client-First - IMAGES/Image.svg" alt="Author">
+        <div>
+          <h2>Andrew Jonson</h2>
+          <span>Posted on 27th January 2022</span>
+        </div>
+      </div>
+      <h1>Step-by-step guide to choosing great font pairs</h1>
+      <div class="category">Startup</div>
+
+      <div class="content">
+        <img src="assets/Client-First - IMAGES/photo-of-woman-wearing-eyeglasses-3184405.svg"
+          alt="Team working together">
+
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra
+          adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes.</p>
+
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra
+          adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes.</p>
+
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Non blandit massa enim nec scelerisque</li>
+          <li>Neque egestas congue quisque egestas</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem.</p>
+      </div>
+    </div>
+
+
+    <div class="section-container">
+      <h2>What to read next</h2>
+      <div class="articles-grid">
+        <!-- Article 1 -->
+        <div class="article-card">
+          <img src="assets/Client-First - IMAGES/two-women-in-front-of-dry-erase-board-1181533.svg"
+            alt="Article Image 1">
+          <div class="article-info">
+            <div class="author">By John Doe | Aug 23, 2021</div>
+            <h3>A UX Case Study Creating a Studious Environment for Students:</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- Article 2 -->
+        <div class="article-card">
+          <img src="assets/Client-First - IMAGES/photo-of-people-doing-handshakes-3183197.svg" alt="Article Image 2">
+          <div class="article-info">
+            <div class="author">By John Doe | Aug 23, 2021</div>
+            <h3>A UX Case Study Creating a Studious Environment for Students:</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+        <!-- Article 3 -->
+        <div class="article-card">
+          <img src="assets/Client-First - IMAGES/photo-of-woman-looking-at-man-3183173.svg" alt="Article Image 3">
+          <div class="article-info">
+            <div class="author">By John Doe | Aug 23, 2021</div>
+            <h3>A UX Case Study Creating a Studious Environment for Students:</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- Blog post Section  End-->
+
+
+  <!-- about us Section  start-->
+  <div style="display: none;">
+    <div class="container-1">
+      <div class="about-us">
+        <div class="about-us-box">
+          <h2>About US</h2>
+          <h1>We are a team of content writers who share their learnings</h1>
+        </div>
+        <div class="right">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, eaque dolorum accusamus quia
+            provident quam facilis? Obcaecati atque non, dolore velit illo officia eos, harum quam amet eveniet,
+            qui temporibus!</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-item">
+          <h2>12+</h2>
+          <p>Blogs Published</p>
+        </div>
+        <div class="stat-item">
+          <h2>18K+</h2>
+          <p>Views on Pinterest</p>
+        </div>
+        <div class="stat-item">
+          <h2>30K+</h2>
+          <p>Total Active Users</p>
+        </div>
+      </div>
+  <div class="mission-vision">
+        <div class="mission">
+          <h3>Our Mission</h3>
+          <h2>Creating valuable content for creatives all around the world.</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua.</p>
+        </div>
+        <div class="vision">
+          <h3>Our Vision</h3>
+          <h2>A platform that empowers individuals to improve.</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="team">
+        <div class="team-section">
+          <div class="team-text">
+            <h2>Our team of creatives</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aut voluptatum itaque harum
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut consectetur adipiscing elit,
+              labore et dolore magna aliqua.</p>
+          </div>
+          <img src="assets/Client-First - IMAGES/ground-group-growth-hands-461049.svg" alt="Team working together">
+        </div>
+        <div class="team-section">
+          <img
+            src="assets/Client-First - IMAGES/three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.svg"
+            alt="Team meeting outdoors">
+          <div class="team-text">
+            <h2>Why we started this Blog</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+              labore et dolo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor totam temporibus, ipsum cum
+              eligendi vitae neque repellat doloribus optio laboriosam maxime rem ad consectetur fugiat
+              similique atque natus consequuntur minus!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- List of Authors Section -->
+    <section class="authors-section">
+      <h2>List of Authors</h2>
+      <div class="authors-list">
+        <div class="author-card">
+          <img
+            src="assets/Client-First - IMAGES/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.svg"
+            alt="Floyd Miles">
+          <h3>Floyd Miles</h3>
+          <p>Content Writer @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+              </a>
+          </div>
+        </div>
+        <div class="author-card">
+          <img
+            src="assets/Client-First - IMAGES/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.svg"
+            alt="Dianne Russell">
+          <h3>Dianne Russell</h3>
+          <p>Editor @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+              </a>
+            
+          </div>
+        </div>
+        <div class="author-card">
+          <img src="assets/Client-First - IMAGES/fashion-woman-cute-shoes-5704849.svg" alt="Jenny Wilson">
+          <h3>Jenny Wilson</h3>
+          <p>Content Writer @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+              </a>
+            
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+        <div class="author-card">
+          <img src="assets/Client-First - IMAGES/content-baker-with-delicious-puff-in-cafeteria-6205509.svg"
+            alt="Leslie Alexander">
+          <h3>Leslie Alexander</h3>
+          <p>Content Writer @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="authors-list">
+        <div class="author-card">
+          <img
+            src="assets/Client-First - IMAGES/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313 (2).svg"
+            alt="Floyd Miles">
+          <h3>Guy Hawkins</h3>
+          <p>Content Writer @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+          </div>
+        </div>
+        <div class="author-card">
+          <img
+            src="assets/Client-First - IMAGES/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083 (2).svg"
+            alt="Dianne Russell">
+          <h3>Dianne Russell</h3>
+          <p>Editor @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+              </a>
+          </div>
+        </div>
+        <div class="author-card">
+          <img src="assets/Client-First - IMAGES/content-unshaven-man-covering-eye-with-yellow-flower-5262459.svg"
+            alt="Jenny Wilson">
+          <h3>Jenny Wilson</h3>
+          <p>Content Writer @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+              </a>
+          </div>
+        </div>
+        <div class="author-card">
+          <img
+            src="assets/Client-First - IMAGES/cheerful-young-ethnic-male-millennial-standing-near-stone-wall-and-smiling-6147118.svg"
+            alt="Leslie Alexander">
+          <h3>Leslie Alexander</h3>
+          <p>Content Writer @company</p>
+          <div class="social-icons">
+            <a>
+              <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+            </a>
+            <a>
+              <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+              </a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!--  about us Section  End-->
+
+  <!-- Join Our Team Section -->
+  <section class="join-team-section" style="display: none;">
+    <h2>Join our team to be a part of our story</h2>
+    <p>Join us in delivering excellent customer service and creating innovative solutions.</p>
+    <button class="read-more-btn">Join Now</button>
+  </section>
+
+  <!-- category Section  start-->
+  <!-- Banner -->
+  <div class="category" style="display: none;">
+    <section class="banner">
+      <h2>Business</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+      <div class="breadcrumb">BLOG > BUSINESS</div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container-2">
+      <!-- Articles Section -->
+      <div class="articles">
+        <div class="article">
+          <img src="assets\Client-First - IMAGES\two-women-in-front-of-dry-erase-board-1181533.svg" alt="Article Image">
+          <div class="article-content">
+            <span class="category">BUSINESS</span>
+            <h3>Top 6 free website mockup tools 2022</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <img src="assets\Client-First - IMAGES\two-women-in-front-of-dry-erase-board-1181533.svg" alt="Article Image">
+          <div class="article-content">
+            <span class="category">BUSINESS</span>
+            <h3>Step-by-step guide to choosing great font pairs</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <img src="assets\Client-First - IMAGES\two-women-in-front-of-dry-erase-board-1181533.svg" alt="Article Image">
+          <div class="article-content">
+            <span class="category">BUSINESS</span>
+            <h3>Ten free Google fonts that you should use</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <img src="assets\Client-First - IMAGES\two-women-in-front-of-dry-erase-board-1181533.svg" alt="Article Image">
+          <div class="article-content">
+            <span class="category">BUSINESS</span>
+            <h3>What did I learn from doing 50+ design sprints?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Categories Section -->
+        <div class="categories">
+          <h3>Categories</h3>
+          <div class="category-item">
+            <img src="assets/Client-First - icons/Icon (2).svg" alt="Startup Icon">
+            <span>Startup</span>
+          </div>
+          <div class="category-item">
+            <img src="assets/Client-First - icons/Icon-1.svg" alt="Business Icon">
+            <span>Business</span>
+          </div>
+          <div class="category-item">
+            <img src="assets/Client-First - icons/icon.svg" alt="Economy Icon">
+            <span>Economy</span>
+          </div>
+          <div class="category-item">
+            <img src="assets/Client-First - icons/business-and-trade 1.svg" alt="Technology Icon">
+            <span>Technology</span>
+          </div>
+        </div>
+
+
+        <!-- Tags Section -->
+        <div class="tags">
+          <h3>All Tags</h3>
+          <span class="tag">Business</span>
+          <span class="tag">Experience</span>
+          <span class="tag">Screen</span>
+          <span class="tag">Technology</span>
+          <span class="tag">Marketing</span>
+          <span class="tag">Life</span>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+  <!-- category Section ends-->
+
+  <!-- author Section  start-->
+  <div class="author" style="display: none;">
+    <!-- Author Section -->
+    <section class="author-section">
+      <img src="assets/Client-First - IMAGES/close-up-photography-of-man-wearing-sunglasses-1212984 (2).svg"
+        alt="Author Image">
+      <div class="author-text">
+        <h2>Hey there, I'm Andrew Johnson and welcome to my Blog</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Non blandit massa enim nec scelerisque viverra mauris in aliquam sem. At risus
+          viverra adipiscing at in tellus.</p>
+
+        <div class="social-icons">
+          <a>
+            <img src="assets/Client-First - icons/Negative.svg" alt="Facebook">
+          </a>
+          <a>
+            <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter">
+          </a>
+          <a>
+            <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram">
+          </a>
+          <a>
+            <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn">
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- My Posts Section -->
+    <section class="posts-section">
+      <h3>My Posts</h3>
+
+      <div class="post">
+        <img src="assets/Client-First - IMAGES/stained-glass-high-rise-building-1106476.svg" alt="Post Image">
+        <div class="post-content">
+          <span class="category">BUSINESS</span>
+          <h4>Font sizes in UI design: The complete guide to follow</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <div class="post">
+        <img
+          src="assets/Client-First - IMAGES/man-in-black-crew-neck-t-shirt-sitting-beside-woman-in-gray-crew-neck-t-shirt-3153201.svg"
+          alt="Post Image">
+        <div class="post-content">
+          <span class="category">ECONOMY</span>
+          <h4>How to build rapport with your web design clients</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- author Section  end-->
+
+  <!-- contact Section  start-->
+  <div style="display: none;">
+    <div class="container-3">
+      <div class="title-section">
+        <h2>Contact Us</h2>
+        <h3>Let’s Start a Conversation</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim.</p>
+      </div>
+
+      <div class="info-box">
+        <div>
+          <h4>Working hours</h4>
+          <p>Monday To Friday</p>
+          <p>9:00 AM to 8:00 PM</p>
+          <p>Our Support Team is available 24/7</p>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>020 7993 2905</p>
+          <p>hello@finsweet.com</p>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <form action="#" method="post">
+          <input type="text" name="fullname" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <select name="query" required>
+            <option value="" disabled selected>Query Related</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Customer Support</option>
+            <option value="feedback">Feedback</option>
+          </select>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- contact Section  end-->
+
+  <!-- policy Section  start-->
+  <div style="display: none;">
+    <div class="container-4">
+      <div class="title-section">
+        <h2>Privacy Policy</h2>
+        <p>Last Updated on 27th January 2022</p>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>Lorem ipsum dolor sit amet</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit cumque nam assumenda, quam eos repudiandae!
+        Voluptatum quibusdam commodi alias quam, eius corrupti unde! Quia sequi dolorum, consequatur consequuntur nam
+        mollitia.
+        Est perferendis id velit, reiciendis sit officiis repellat, omnis atque nobis quae deleniti. Ea sunt odit
+        veritatis quod cumque possimus dolorum iure! Ipsa excepturi eum assumenda, repellat at corporis quisquam.
+        Excepturi, quaerat saepe. Nostrum deleniti culpa commodi repudiandae, illum laboriosam distinctio dignissimos
+        dolores dolorem! Voluptate blanditiis ipsa aperiam illo, quidem corporis tempora quam delectus? Accusamus
+        laboriosam harum dolore quae aspernatur.
+        Facilis, excepturi quae maxime officiis omnis labore nihil quibusdam ratione assumenda error modi quis
+        molestias, atque natus perferendis incidunt quia? Possimus, laboriosam eveniet voluptatibus impedit ut qui
+        dolores saepe pariatur!
+        Impedit atque fugiat hic fugit a! Aliquid alias similique perspiciatis voluptates voluptatibus saepe ad a. Eius
+        repudiandae pariatur eaque accusamus libero delectus culpa. Alias omnis similique atque dignissimos? Unde,
+        odit?.</p>
+
+      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, beatae odio? Odit dolore, quas atque magni
+        qui, praesentium ab sed eius necessitatibus minima, enim quasi ipsum voluptas tempora! Tempore, inventore.
+        Accusantium ut quibusdam, blanditiis est nesciunt excepturi ea accusamus! Deserunt ab molestiae sint
+        perspiciatis soluta alias a tenetur doloribus quasi expedita vel voluptatibus, iste labore cupiditate dicta
+        saepe totam sed?
+        Debitis hic repudiandae quaerat sed in ut consectetur delectus laborum nisi nesciunt. Iusto nihil nesciunt
+        deserunt quos pariatur repellendus, earum in veniam necessitatibus impedit amet nostrum repellat corporis,
+        mollitia voluptatibus!</p>
+    </div>
+  </div>
+  <!-- policy Section  end-->
+
+
+  <footer class="footer"> 
+    <div class="footer-container"> 
+ 
+      <!-- Section 1: Brand and Navigation Links --> 
+      <div class="footer-section"> 
+        <h3 class="footer-brand">&#123Finsweet</h3> 
+        <ul class="footer-links"> 
+          <li><a href="#">Home</a></li> 
+          <li><a href="#">Blog</a></li> 
+          <li><a href="#">About Us</a></li> 
+          <li><a href="#">Contact Us</a></li> 
+          <li><a href="#">Privacy Policy</a></li> 
+        </ul> 
+      </div> 
+      <!-- Section 2: Newsletter Subscription --> 
+      <div class="footer-section newsletter"> 
+        <div class="newsletter-box"> 
+          <h1>Subscribe to our newsletter to get the latest updates and news</h1> 
+        </div> 
+        <div class="newsletter-box"> 
+          <form action="/subscribe" method="POST"> 
+            <input type="email" name="email" placeholder="Enter your email" required aria-label="Enter your email"> 
+            <button type="submit">Subscribe</button> 
+          </form> 
+        </div> 
+      </div> 
+ 
+      <!-- Section 3: Contact and Social Icons --> 
+      <div class="footer-section contact"> 
+        <div class="p"> 
+          <p>Finstreet 118 2561 Fintown</p> 
+          <p>Hello@finsweet.com 020 7993 2905</p> 
+        </div> 
+        <div class="social-icons"> 
+          <a href="#" aria-label="Visit our Facebook page"> 
+            <img src="assets/Client-First - icons/Negative.svg" alt="Facebook"> 
+          </a> 
+          <a href="#" aria-label="Visit our Twitter page"> 
+            <img src="assets/Client-First - icons/Negative (4).svg" alt="Twitter"> 
+          </a> 
+          <a href="https://instagram.com" aria-label="Visit our Instagram page"> 
+            <img src="assets/Client-First - icons/Negative (2).svg" alt="Instagram"> 
+          </a> 
+          <a href="https://linkedin.com" aria-label="Visit our LinkedIn page"> 
+            <img src="assets/Client-First - icons/Negative (3).svg" alt="LinkedIn"> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </footer>
+
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
